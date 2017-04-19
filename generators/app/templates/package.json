@@ -1,0 +1,30 @@
+{
+  "name": "nilc",
+  "version": "0.0.1",
+  "description": "Skyline Wordpress",
+  "main": "gulp.js",
+  "wpdir": "/Users/admin/Sites/wp/pixo",
+  "dev": "/Users/admin/dev/",
+  "devfolder": "/Users/admin/dev/pixo_dev/",
+  "themefolder": "/Users/admin/dev/pixo_dev/pixo/",
+  "childthemefolder": "/Users/admin/dev/pixo_dev/pixo-child/",
+  "frameworkfolder": "/Users/admin/dev/pixo_dev/zorbix-framework-dev/zorbix-framework2/",
+  "framework_dev": "/Users/admin/dev/pixo_dev/zorbix-framework-dev/",
+  "sc": "section",
+  "sassfile" : "sass/style.scss",
+  "demosoutput": "/Users/admin/dev/pixo_dev/demos/",
+  "dependencies": {
+    "gulp-assets-check": "*",
+    "node-webkit-screenshot": "^0.3.2",
+    "wp-cli": "0.0.5"
+  },
+  "scripts": {
+    "css": "sass -w sass/nilc.scss:wp/wp-content/themes/Divi-child/courses.css",
+    "start": "npm run css & npm run livereload",
+    "livereload": "livereload woocommerce-shirt-design-plug/front/asset/css/shirtdesigner.css",
+    "pw": "cd wp && wp user create admin zack.ortus@gmail.com --role=administrator --user_pass=pw"
+
+  },
+  "devDependencies": {
+  }
+}
