@@ -1,0 +1,38 @@
+local:
+  vhost: "http://nilc"
+  wordpress_path: "/Users/admin/dev/nilct/wp" # use an absolute path here
+
+  database:
+    name: "nilct"
+    user: "root"
+    password: "stargazer"
+    host: "127.0.0.1"
+
+production:
+  vhost: "http://codeable.zorbixconsulting.com/nilc"
+  wordpress_path: "/home/zorbixco/public_html/codeable/nilc"
+
+  database:
+    name: "zorbixco_nilc"
+    user: "zorbixco_move"
+    password: "MX5@Kcif&#*T"
+    host: "localhost"
+
+  exclude:
+    - ".git/"
+    - ".gitignore"
+    - ".sass-cache/"
+    - "node_modules/"
+    - "bin/"
+    - "tmp/*"
+    - "Gemfile*"
+    - "Movefile"
+    - "wp-config.php"
+    - "wp-content/*.sql"
+    - ".htaccess"
+
+  ssh:
+     host: "zorbixconsulting.com"
+     user: "zorbixco"
+     port: "18765"
+     rsync_options: "--verbose --chmod=755"
