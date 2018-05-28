@@ -1,3 +1,7 @@
+## Status
+
+Currently not working on this in favor of using a bash script. May revisit it in the future.
+
 # generator-task [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Task scaffolding
 
